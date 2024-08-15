@@ -17,13 +17,3 @@ onMounted(async () => await AccountService.getAccounts());
     <BaseButton />
     <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, natus.</p>
 </template>
-
-<style scoped lang="scss">
-.test {
-    color: red;
-
-    &-primary {
-        color: blue;
-    }
-}
-</style>
