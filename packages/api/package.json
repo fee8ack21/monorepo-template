@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo-template/api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx openapi --indent 2 --client axios --input http://localhost:5555/swagger/v1/swagger.json --output ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "openapi-typescript-codegen": "^0.29.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
