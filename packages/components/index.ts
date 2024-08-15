@@ -1,3 +1,4 @@
 import BaseButton from "./src/components/BaseButton.vue";
 import BaseLogo from "./src/components/BaseLogo.vue";
-export { BaseButton, BaseLogo };
+import BaseDropdown from "./src/components/BaseDropdown.vue";
+export { BaseButton, BaseLogo, BaseDropdown };

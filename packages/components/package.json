@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "primevue": "3.53.0"
+  },
   "devDependencies": {
     "sass": "^1.77.8"
   }

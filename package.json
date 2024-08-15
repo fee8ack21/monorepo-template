@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev:app1": "pnpm --filter @monorepo-template/app1 dev",
+    "dev:app2": "pnpm --filter @monorepo-template/app2 dev",
     "build:app1": "pnpm --filter @monorepo-template/app1 build",
+    "build:app2": "pnpm --filter @monorepo-template/app2 build",
     "build:api": "pnpm --filter @monorepo-template/api build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
