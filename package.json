@@ -1,15 +1,45 @@
 {
   "name": "monorepo-template",
   "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev:app1": "pnpm --filter @monorepo-template/app1 dev",
     "dev:app2": "pnpm --filter @monorepo-template/app2 dev",
     "build:app1": "pnpm --filter @monorepo-template/app1 build",
     "build:app2": "pnpm --filter @monorepo-template/app2 build",
-    "build:api": "pnpm --filter @monorepo-template/api build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:api": "pnpm --filter @monorepo-template/api build"
+  },
+  "dependencies": {
+    "vue": "^3.4.35",
+    "axios": "^1.6.8",
+    "primevue": "3.53.0",
+    "vue-router": "^4.1.5",
+    "lodash": "^4.17.21",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vue-tsc": "^2.0.29",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9",
+    "sass": "^1.77.8",
+    "prettier": "^3.0.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "@vue/test-utils": "^2.4.5",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.49.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "@rushstack/eslint-patch": "^1.3.3",
+    "@tsconfig/node20": "^20.1.2"
   },
   "keywords": [],
   "author": "",

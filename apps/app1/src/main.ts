@@ -11,7 +11,8 @@ import '@/plugins/axios'
 
 // primevue
 import 'primevue/resources/themes/aura-light-green/theme.css'
-import PrimeVue from "primevue/config";
+// import PrimeVue from "primevue/config";
+import PrimeVue from 'primevue/config';
 
 const app = createApp(App)
 app.use(PrimeVue)

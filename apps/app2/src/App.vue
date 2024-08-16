@@ -2,7 +2,7 @@
 import { onMounted, ref } from "vue";
 import { AccountService } from "@monorepo-template/api";
 import { add, uuidv4 } from "@monorepo-template/utilities";
-import { BaseButton, BaseDropdown } from "@monorepo-template/components";
+import { BaseButton, BaseDropdown } from "@monorepo-template/ui";
 
 onMounted(() => console.log(add(1, 2)));
 onMounted(() => console.log(uuidv4()));

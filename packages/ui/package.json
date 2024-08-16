@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-template/components",
+  "name": "@monorepo-template/ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,11 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "primevue": "3.53.0"
-  },
-  "devDependencies": {
-    "sass": "^1.77.8"
-  }
+  "license": "ISC"
 }
