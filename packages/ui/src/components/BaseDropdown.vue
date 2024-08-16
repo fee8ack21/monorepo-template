@@ -11,29 +11,29 @@
 </template>
 
 <script setup>
-import Dropdown from "primevue/dropdown";
+import Dropdown from 'primevue/dropdown'
 
 const props = defineProps({
   modelValue: {
-    default: undefined,
+    default: undefined
   },
   options: {
     type: Array,
-    default: () => [],
+    default: () => []
   },
   optionLabel: {
     type: String,
-    default: "name",
+    default: 'name'
   },
   optionValue: {
     type: String,
-    default: "value",
+    default: 'value'
   },
   placeholder: {
     type: String,
-    default: "",
-  },
-});
+    default: ''
+  }
+})
 
-const emit = defineEmits(["update:modelValue"]);
+const emit = defineEmits(['update:modelValue'])
 </script>

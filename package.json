@@ -10,7 +10,9 @@
   "scripts": {
     "app1": "pnpm --filter @monorepo-template/app1",
     "app2": "pnpm --filter @monorepo-template/app2",
-    "api": "pnpm --filter @monorepo-template/api"
+    "api": "pnpm --filter @monorepo-template/api",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "vue": "^3.4.35",
