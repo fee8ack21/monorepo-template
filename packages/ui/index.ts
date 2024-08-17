@@ -1,5 +1,8 @@
 import BaseButton from './src/components/BaseButton.vue'
-import BaseLogo from './src/components/BaseLogo.vue'
 import BaseDropdown from './src/components/BaseDropdown.vue'
+import BaseToTop from './src/components/BaseToTop.vue'
 
-export { BaseButton, BaseLogo, BaseDropdown }
+import BaseFooter from './src/layout/BaseFooter.vue'
+import BaseLayout from './src/layout/BaseLayout.vue'
+
+export { BaseButton, BaseDropdown, BaseToTop, BaseLayout }
