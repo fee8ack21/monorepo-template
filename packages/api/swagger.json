@@ -1,0 +1,192 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Monorepo Template",
+    "description": "Monorepo Template Mock API",
+    "contact": {
+      "name": "Pin Jui Huang",
+      "email": "fee8ack21@gmail.com"
+    },
+    "license": {
+      "name": "All rights reserved. Unauthorized reproduction of the contents of this website is prohibited."
+    },
+    "version": "1.0"
+  },
+  "paths": {
+    "/accounts": {
+      "get": {
+        "tags": ["Account"],
+        "summary": "取得帳號列表",
+        "operationId": "getAccounts",
+        "parameters": [
+          {
+            "name": "userName_like",
+            "in": "query",
+            "description": "用戶名稱",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "email_like",
+            "in": "query",
+            "description": "用戶信箱",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "當前頁數",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "rowsPerPage",
+            "in": "query",
+            "description": "每頁幾筆",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "sortField",
+            "in": "query",
+            "description": "排序欄位",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortOrder",
+            "in": "query",
+            "description": "排序升降冪",
+            "schema": {
+              "$ref": "#/components/schemas/SortOrder"
+            }
+          },
+          {
+            "name": "x-api-version",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json; x-api-version=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAccountResponse"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error",
+            "content": {
+              "application/json; x-api-version=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GetAccountResponse": {
+        "required": ["email", "id", "roleIds", "userName"],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "用戶ID"
+          },
+          "userName": {
+            "type": "string",
+            "description": "用戶名稱"
+          },
+          "email": {
+            "type": "string",
+            "description": "用戶信箱"
+          },
+          "roleIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "角色 IDs"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAccountsQueryType": {
+        "enum": ["ALL", "MANAGER", "USER"],
+        "type": "string"
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": {}
+      },
+      "SortOrder": {
+        "enum": ["ASC", "DESC"],
+        "type": "string"
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. \r\n                Enter 'Bearer' [space] and then your token in the text input below. \r\n                Example: 'Bearer 12345abcdef'.",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "Account",
+      "description": "帳號"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx openapi --indent 2 --client axios --input http://localhost:5555/swagger/v1/swagger.json --output ./src",
+    "build": "npx openapi --indent 2 --client axios --input ./swagger.json --output ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

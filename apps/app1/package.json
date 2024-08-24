@@ -12,6 +12,7 @@
     "@monorepo-template/api": "workspace:*",
     "@monorepo-template/utilities": "workspace:*",
     "@monorepo-template/ui": "workspace:*",
+    "@monorepo-template/views": "workspace:*",
     "@monorepo-template/plugins": "workspace:*"
   }
 }
