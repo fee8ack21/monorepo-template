@@ -11,6 +11,7 @@
     "app1": "pnpm --filter @monorepo-template/app1",
     "app2": "pnpm --filter @monorepo-template/app2",
     "api": "pnpm --filter @monorepo-template/api",
+    "mock-server": "pnpm --filter @monorepo-template/mock-server",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

@@ -1,0 +1,41 @@
+{
+  "accounts": [
+    {
+      "id": "0bba03b7-80f8-42b4-9435-ae6899515512",
+      "userName": "System Manager 1",
+      "email": "system_manager1@gmail.com",
+      "roleIds": ["0a2a5d9b-a25f-4143-bf7a-fb58276487b7", "58f1eb55-0cf6-4980-b1a4-ce432585deb2"]
+    },
+    {
+      "id": "30093908-2edf-455f-9762-7140755d0936",
+      "userName": "System Manager 2",
+      "email": "system_manager2@gmail.com",
+      "roleIds": ["0a2a5d9b-a25f-4143-bf7a-fb58276487b7"]
+    },
+    {
+      "id": "8579fcfb-53bd-45bc-8226-75f40cbb788c",
+      "userName": "System Manager 3",
+      "email": "system_manager3@gmail.com",
+      "roleIds": ["d6bebe16-ff03-4507-b036-4bcb63547486"]
+    },
+
+    {
+      "id": "ca458997-3b0c-4786-9f14-df6749a14e77",
+      "userName": "General User 1",
+      "email": "general_user1@gmail.com",
+      "roleIds": ["d6bebe16-ff03-4507-b036-4bcb63547486"]
+    },
+    {
+      "id": "0de84813-689b-4ade-89f7-34611b448a46",
+      "userName": "General User 2",
+      "email": "general_user2@gmail.com",
+      "roleIds": ["0a2a5d9b-a25f-4143-bf7a-fb58276487b7", "58f1eb55-0cf6-4980-b1a4-ce432585deb2"]
+    },
+    {
+      "id": "2b732dec-aadc-4eda-ba95-c0e09eb2c362",
+      "userName": "General Manager 1",
+      "email": "general_manager1@gmail.com",
+      "roleIds": ["0a2a5d9b-a25f-4143-bf7a-fb58276487b7"]
+    }
+  ]
+}
