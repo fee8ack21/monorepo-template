@@ -1,6 +1,10 @@
 <template>
-  <button class="to-top">Top</button>
+  <button class="to-top" @click="onClick">Top</button>
 </template>
+
+<script setup lang="ts">
+const onClick = () => window.scrollTo({ top: 0, behavior: 'smooth' })
+</script>
 
 <style scoped lang="scss">
 .to-top {

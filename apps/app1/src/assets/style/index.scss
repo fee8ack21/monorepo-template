@@ -10,3 +10,9 @@
 }
 
 @import './variables';
+
+html[data-theme='dark'] {
+  body {
+    @apply dark:bg-gray-900 dark:text-gray-200;
+  }
+}
