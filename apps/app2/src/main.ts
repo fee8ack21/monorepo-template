@@ -7,7 +7,8 @@ import App from './App.vue'
 // OpenAPI.BASE = import.meta.env.VITE_API_BASE_URL
 
 // plugins
-import '@/plugins/axios'
+import { axiosPlugin } from '@monorepo-template/plugins'
+axiosPlugin.use()
 
 // primevue
 import 'primevue/resources/themes/arya-blue/theme.css'
